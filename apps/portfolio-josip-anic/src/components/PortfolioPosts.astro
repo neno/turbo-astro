@@ -5,4 +5,12 @@ import Posts from '@repo/portfolio/Posts.astro';
 const posts = await getCollection('posts');
 ---
 
+<h1>Portfolio Josip</h1>
 <Posts posts={posts} />
+
+<style>
+  h1 {
+    color: red;
+    font-size: 3em;
+  }
+</style>
