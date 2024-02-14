@@ -1,0 +1,8 @@
+---
+import { getCollection } from 'astro:content';
+import Posts from '@repo/portfolio/Posts.astro';
+
+const posts = await getCollection('posts');
+---
+
+<Posts posts={posts} />

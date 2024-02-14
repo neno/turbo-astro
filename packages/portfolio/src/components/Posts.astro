@@ -1,11 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
 import H1 from './H1.astro';
 
-const posts = await getCollection('posts');
+interface Post {
+  data: {
+    title: string;
+  };
+}
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
 ---
 
-<H1 text='Articles - Holdrio' />
+<H1 text='Articles from portfolio pkg' />
 {
   posts.map((post) => (
     <div>
