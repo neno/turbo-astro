@@ -2,6 +2,9 @@
   "name": "portfolio-josip-anic",
   "type": "module",
   "version": "0.0.1",
+  "exports": {
+    "./portfolio.astro": "./src/pages/portfolio.astro"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
