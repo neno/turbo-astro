@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "portfolio-josip-anic": "workspace:*",
+    "@repo/portfolio-josip-anic": "workspace:*",
     "astro": "^4.3.7",
     "@astrojs/check": "^0.5.4",
     "typescript": "^5.3.3"
