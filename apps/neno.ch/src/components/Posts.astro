@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import H1 from './H1.astro';
+
+const posts = await getCollection('posts');
+---
+
+<H1 text='Articles' />
+{
+  posts.map((post) => (
+    <div>
+      <h2>{post.data.title}</h2>
+    </div>
+  ))
+}
+
+<style>
+  h2 {
+    color: white;
+    font-size: 1.5em;
+  }
+</style>
