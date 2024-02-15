@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import Posts from '@repo/portfolio/Posts.astro';
+
+const posts = await getCollection('posts');
+---
+
+<h1>Portfolio Nenad</h1>
+<Posts posts={posts} />
+
+<style>
+  h1 {
+    color: red;
+    font-size: 3em;
+  }
+</style>

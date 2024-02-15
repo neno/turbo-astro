@@ -1,0 +1,21 @@
+{
+  "name": "@repo/portfolio-nenad-brcic",
+  "type": "module",
+  "version": "0.0.1",
+  "exports": {
+    "./portfolio.astro": "./src/pages/portfolio.astro"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@repo/portfolio": "workspace:*",
+    "astro": "^4.3.7",
+    "@astrojs/check": "^0.5.4",
+    "typescript": "^5.3.3"
+  }
+}
