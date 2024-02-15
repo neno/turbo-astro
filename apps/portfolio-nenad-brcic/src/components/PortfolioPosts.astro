@@ -6,7 +6,7 @@ const posts = await getCollection('posts');
 ---
 
 <h1>Portfolio Nenad</h1>
-<Posts posts={posts} />
+<Posts posts={posts.reverse()} />
 
 <style>
   h1 {
